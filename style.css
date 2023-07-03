@@ -1,0 +1,68 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
+  }
+
+:root {
+    --sidebar-width: 40vw;
+}
+
+html, body, div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent {
+    display: flex;
+}
+
+.sidebar-img {
+    vertical-align: top;
+    width: var(--sidebar-width);
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 20vh;
+    left: 0vw;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: var(--sidebar-width);
+    height: 15vh;
+    background-color: rgba(18, 18, 18, 0.5); 
+}
+
+.overlay-img {
+    max-height: 90%;
+}
+
+.overlay-text {
+    font-family: norse-bold;
+    color: white;
+    font-size: 7em;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.header {
+    width: calc(100vw - var(--sidebar-width));
+    height: 35vh;
+    background-color: ghostwhite;
+}
+
+.form {
+    width: calc(100vw - var(--sidebar-width));
+    height: 30vh;
+    background-color: white;
+}
+
+.buttons {
+    width: calc(100vw - var(--sidebar-width));
+    height: 35vh;
+    background-color: ghostwhite;
+}
